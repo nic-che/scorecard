@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    background-color: #1B244A;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+@font-face{
+    font-family:'digital-clock-font';
+    src: url('technology.bold.ttf');
+   }
+
+#home, #guest{
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 36px;
+    /* identical to box height, or 90% */
+    text-align: center;
+
+    color: #EEEEEE;
+
+}
+
+#count-h, #count-g{
+    background: #080001;
+    border-radius: 5px;
+    
+    /* points-text */
+    font-family:'digital-clock-font';
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 127px;
+    text-align: center;
+
+    color: #F94F6D;
+
+}
+
+#incr-1, #incr-2, #incr-3{
+    /* add-points-btns-home */
+    border: #9AABD8;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    background: #1B244A;
+    
+
+    font-family: 'digital-clock-font';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #9AABD8
+}
+
+.buttonBox{
+    display: flex;
+    justify-content: space-between;
+}
+
+#incr-1:hover, #incr-2:hover, #incr-3:hover{
+    background: #3c4fad;
+    transition: 0.5s
+}
+
+#incr-1:active, #incr-2:active, #incr-3:active{
+    background: #14192e;
+    transition: 0.1s
+}
+
+#reset-btn{
+    background:#F94F6D;
+    border-radius: 5px;
+    border-color:#F94F6D;
+
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+
+    color: #EEEEEE;
+    position: fixed;
+    bottom: 300px;
+}
+
+#reset-btn:hover{
+    background: #ff8299;
+    transition: 0.5s;
+}
+
+#reset-btn:active{
+    background:#c11f3d;
+    transition: 0.1s;
+}
